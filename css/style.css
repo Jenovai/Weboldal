@@ -1,0 +1,125 @@
+body{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    background-color: blue;
+    color:black;
+    background-image: linear-gradient(blue,white);
+}
+
+.egesz{
+    display: grid;
+}
+
+.fejlec{
+    grid-column: 1 / 5;
+    grid-row: 1;
+    text-align: center;
+}
+
+h1{
+    text-shadow: 2px 2px red;
+}
+
+.menu1,.menu2,.menu3{
+    margin: 5px;
+    border: black solid 2px;
+    background-color: white;
+    
+}
+
+.menu1{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+.menu2{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.menu3{
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.filmek,.sorozatok,.animek{
+    border: solid 2px black;
+    box-shadow: 10px 10px 5px grey;
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+li{
+    padding-left: 10px;
+}
+
+.sav{
+    grid-column: 4;
+    grid-row: 3;
+}
+.sav>*>h3{
+    text-align: center;
+    border-bottom:dotted 3px black; 
+}
+
+.tartalom{
+    
+    grid-column: 1/4;
+    grid-row: 3;    
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 3px black;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.tartalom>ol>li{
+    margin: 5px;
+    
+}
+hr{
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+.lablec{
+    grid-column: 1/5;
+    grid-row: 4;
+    text-align: center;
+}
+
+img{
+    width: 500px;
+}
+
+@media only screen and (max-width:1000px ){
+    .menu1,.menu2,.menu3{
+        width: 90%;
+    }
+
+    .sav{
+    grid-column: 1/4;
+    grid-row: 4;
+    }
+    
+   .lablec{
+    grid-column: 1/5;
+    grid-row: 5;
+    text-align: center;
+    }
+
+    img{
+        width: 70%;
+    }
+}
